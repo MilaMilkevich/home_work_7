@@ -19,7 +19,7 @@ public class NewLibrary {
         }
     }
 
-    public void returnBook(LocalDate firstDay, LocalDate lastDay) {
+    public void takenBook(LocalDate firstDay, LocalDate lastDay) {
         putBook(LocalDate.of(2019, 10, 1), "Disappearing Earth");
         putBook(LocalDate.of(2019, 10, 1), "The Topeka School");
         putBook(LocalDate.of(2019, 10, 2), "Exhalation");

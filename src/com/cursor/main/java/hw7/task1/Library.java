@@ -20,7 +20,7 @@ public class Library {
         library.put(LocalDate.of(2019, 10, 28), "No Visible Bruises");
     }
 
-    public void listBooks() {
+    public void printBooks() {
         Collection<String> listBooks = library.values();
         System.out.println("List of books that I took in the library: " + listBooks);
     }
@@ -33,7 +33,7 @@ public class Library {
         }
     }
 
-    public void DayITookTheBooks() {
+    public void tookBook() {
         System.out.println("List of dates when books were taken: " + library.keySet());
     }
 }

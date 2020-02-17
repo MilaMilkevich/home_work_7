@@ -7,16 +7,15 @@ import java.time.LocalDate;
 
 public class AppExecutor {
 
-    public static void start(){
+    public static void start() {
 
-        Library library=new Library();
+        Library library = new Library();
         library.putBooks();
-        library.listBooks();
-        library.checkForBooks(LocalDate.of(2019,10,15));
-        library.DayITookTheBooks();
+        library.printBooks();
+        library.checkForBooks(LocalDate.of(2019, 10, 15));
+        library.tookBook();
 
-
-       NewLibrary newLibrary=new NewLibrary();
-       newLibrary.returnBook(LocalDate.of(2019,10,1), LocalDate.of(2019,11,1));
+        NewLibrary newLibrary = new NewLibrary();
+        newLibrary.takenBook(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 11, 1));
     }
 }
